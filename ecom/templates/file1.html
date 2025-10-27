@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexaCart - Where Quality Meets Affordability</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home">NexaCart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#men">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#women">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kids">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shoes">Shoes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a class="btn position-relative me-3" href="#wishlist">
+            <i class="fas fa-heart"></i>
+            <span class="badge-cart">2</span>
+          </a>
+          <a class="btn position-relative me-3" href="#cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge-cart">3</span>
+          </a>
+          <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.pinimg.com/1200x/9f/8f/81/9f8f813703a6295267474cc8aff0efee.jpg" class="d-block w-100" alt="Fashion Collection">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/736x/4a/79/f9/4a79f9e6b9d9afeaffd6a1a8102eb1a5.jpg" class="d-block w-100" alt="Men's Fashion">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/1200x/6d/e9/ef/6de9ef96d5da0df4ab4f45704ca26b83.jpg" class="d-block w-100" alt="Women's Fashion">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+     <!-- category -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4 section-title">Shop By Category</h2>
+      <div class="row g-4">
+        
+        <!-- Men Category -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/736x/4a/79/f9/4a79f9e6b9d9afeaffd6a1a8102eb1a5.jpg" class="card-img-top category-img" alt="Men">
+            <div class="card-body text-center">
+              <h5 class="category-title">Men</h5>
+              <div class="buy-btn">
+                <a href="#men" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Women Category -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/1200x/6d/e9/ef/6de9ef96d5da0df4ab4f45704ca26b83.jpg" class="card-img-top category-img" alt="Women">
+            <div class="card-body text-center">
+              <h5 class="category-title">Women</h5>
+              <div class="buy-btn">
+                <a href="#women" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kids Category -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/736x/ac/fe/59/acfe591d1809ecc24364583e12773ff9.jpg" class="card-img-top category-img" alt="Kids">
+            <div class="card-body text-center">
+              <h5 class="category-title">Kids</h5>
+              <div class="buy-btn">
+                <a href="#kids" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shoes Category -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/736x/7b/58/28/7b58287bb62739c024d59a47895237ad.jpg" class="card-img-top category-img" alt="Shoes">
+            <div class="card-body text-center">
+              <h5 class="category-title">Shoes</h5>
+              <div class="buy-btn">
+                <a href="#shoes" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEN SECTION -->
+  <section id="men" class="section-padding bg-light-gray">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Men's Collection</h2>
+      
+      <!-- Men's Carousel -->
+      <div id="menCarousel" class="carousel slide carousel-category mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/1200x/c9/4b/80/c94b80778cc44b28a45fe4aea8415e52.jpg" class="d-block w-100" alt="Men's Fashion">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/3a/84/ef/3a84efe11c7ffbfce9059ab348defd29.jpg" class="d-block w-100" alt="Men's Collection">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/7b/58/28/7b58287bb62739c024d59a47895237ad.jpg" class="d-block w-100" alt="Men's Shoes">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#menCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/736x/4a/79/f9/4a79f9e6b9d9afeaffd6a1a8102eb1a5.jpg" class="card-img-top product-img" alt="Men's Fashion">
+            <div class="card-body">
+              <h5 class="card-title">Casual Wear</h5>
+              <p class="card-text">Comfortable and stylish casual outfits for everyday wear.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$49.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="img/mendress1.jpg" class="card-img-top product-img" alt="Formal Wear">
+            <div class="card-body">
+              <h5 class="card-title">Formal Attire</h5>
+              <p class="card-text">Elegant formal wear for special occasions and business meetings.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$89.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/736x/7b/58/28/7b58287bb62739c024d59a47895237ad.jpg" class="card-img-top product-img" alt="Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Men's Footwear</h5>
+              <p class="card-text">Stylish and comfortable shoes for every occasion.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$69.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WOMEN SECTION -->
+  <section id="women" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Women's Collection</h2>
+      
+      <!-- Women's Carousel -->
+      <div id="womenCarousel" class="carousel slide carousel-category mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/1200x/a1/82/a7/a182a704d8a762cb4f6f2f90135fe8c9.jpg" class="d-block w-100" alt="Women's Fashion">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/3a/84/ef/3a84efe11c7ffbfce9059ab348defd29.jpg" class="d-block w-100" alt="Women's Collection">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/7b/58/28/7b58287bb62739c024d59a47895237ad.jpg" class="d-block w-100" alt="Women's Shoes">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#womenCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#womenCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+<!-- wommen products -->
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/6d/e9/ef/6de9ef96d5da0df4ab4f45704ca26b83.jpg" class="card-img-top product-img" alt="Women's Fashion">
+            <div class="card-body">
+              <h5 class="card-title">Casual Dresses</h5>
+              <p class="card-text">Beautiful and comfortable dresses for everyday wear.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$59.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/42/3c/cf/423ccf61cee13e2060dd58d024a30a7f.jpg" class="card-img-top product-img" alt="Formal Wear">
+            <div class="card-body">
+              <h5 class="card-title">Evening Gowns</h5>
+              <p class="card-text">Elegant evening wear for special occasions and parties.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$129.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/736x/7b/58/28/7b58287bb62739c024d59a47895237ad.jpg" class="card-img-top product-img" alt="Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Women's Footwear</h5>
+              <p class="card-text">Stylish and comfortable shoes for every occasion.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$79.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIDS SECTION -->
+  <section id="kids" class="section-padding bg-light-gray">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Kids Collection</h2>
+      
+      <!-- Kids Carousel -->
+      <div id="kidsCarousel" class="carousel slide carousel-category mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/1200x/dd/b8/36/ddb836001cc1791ead0fd171ea2ee221.jpg" class="d-block w-100" alt="Kids Fashion">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/3a/84/ef/3a84efe11c7ffbfce9059ab348defd29.jpg" class="d-block w-100" alt="Kids Collection">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/7b/58/28/7b58287bb62739c024d59a47895237ad.jpg" class="d-block w-100" alt="Kids Shoes">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#kidsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#kidsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/736x/ac/fe/59/acfe591d1809ecc24364583e12773ff9.jpg" class="card-img-top product-img" alt="Kids Fashion">
+            <div class="card-body">
+              <h5 class="card-title">Boys Collection</h5>
+              <p class="card-text">Comfortable and stylish outfits for boys of all ages.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$29.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/6a/df/27/6adf27a15e4cf50be944a82459e0abdb.jpg" class="card-img-top product-img" alt="Girls Collection">
+            <div class="card-body">
+              <h5 class="card-title">Girls Collection</h5>
+              <p class="card-text">Beautiful and comfortable outfits for girls of all ages.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$34.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/736x/6e/73/5d/6e735dbc3e0f8c5b2e783ff0e7997235.jpg" class="card-img-top product-img" alt="Kids Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Kids Footwear</h5>
+              <p class="card-text">Comfortable and durable shoes for active kids.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$39.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOES SECTION -->
+  <section id="shoes" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Shoes Collection</h2>
+      
+      <!-- Shoes Carousel -->
+      <div id="shoesCarousel" class="carousel slide carousel-category mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/1200x/01/c4/9a/01c49a9a37aca2339da21cc194326eb2.jpg" class="d-block w-100" alt="Shoes Collection">
+          </div>
+        
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#shoesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#shoesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/e1/38/47/e138473446500dc2d81def41482b5ae2.jpg" class="card-img-top product-img" alt="Men's Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Men's Casual Shoes</h5>
+              <p class="card-text">Comfortable and stylish casual shoes for everyday wear.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$69.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/0e/4b/a1/0e4ba13f337fe7748cdf2f64182cf5b5.jpg" class="card-img-top product-img" alt="Women's Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Women's Heels</h5>
+              <p class="card-text">Elegant heels for special occasions and formal events.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$89.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <img src="https://i.pinimg.com/1200x/5b/0c/22/5b0c22b96567aea56534b35b1ebb87e7.jpg" class="card-img-top product-img" alt="Sports Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Sports Shoes</h5>
+              <p class="card-text">High-performance sports shoes for active lifestyle.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 mb-0">$79.99</span>
+                <div>
+                  <a href="#wishlist" class="btn btn-outline-danger wishlist-btn me-2">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a href="#cart" class="btn btn-primary cart-btn">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WISHLIST PAGE -->
+  <section id="wishlist" class="section-padding bg-light-gray">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">My Wishlist</h2>
+      
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card product-card shadow-sm">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i.pinimg.com/736x/4a/79/f9/4a79f9e6b9d9afeaffd6a1a8102eb1a5.jpg" class="img-fluid rounded-start h-100" alt="Men's Fashion" style="object-fit: cover;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body d-flex flex-column h-100">
+                  <h5 class="card-title">Casual Wear</h5>
+                  <p class="card-text">$49.99</p>
+                  <div class="mt-auto">
+                    <a href="#cart" class="btn btn-primary me-2">Add to Cart</a>
+                    <button class="btn btn-outline-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card product-card shadow-sm">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i.pinimg.com/1200x/42/3c/cf/423ccf61cee13e2060dd58d024a30a7f.jpg" class="img-fluid rounded-start h-100" alt="Women's Fashion" style="object-fit: cover;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body d-flex flex-column h-100">
+                  <h5 class="card-title">Casual Dresses</h5>
+                  <p class="card-text">$59.99</p>
+                  <div class="mt-auto">
+                    <a href="#cart" class="btn btn-primary me-2">Add to Cart</a>
+                    <button class="btn btn-outline-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5">
+        <a href="#cart" class="btn btn-primary me-3">Move All to Cart</a>
+        <a href="#home" class="btn btn-outline-secondary">Continue Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CART PAGE -->
+  <section id="cart" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Shopping Cart</h2>
+      
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src="https://i.pinimg.com/736x/4a/79/f9/4a79f9e6b9d9afeaffd6a1a8102eb1a5.jpg" class="img-fluid rounded" alt="Men's Fashion">
+                </div>
+                <div class="col-md-4">
+                  <h5 class="card-title">Casual Wear</h5>
+                  <p class="card-text">$49.99</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-secondary btn-sm">-</button>
+                    <span class="mx-3">1</span>
+                    <button class="btn btn-outline-secondary btn-sm">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <p class="card-text fw-bold">$49.99</p>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-outline-danger btn-sm">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src="img/womenkids.jpg" class="img-fluid rounded" alt="Formal Wear">
+                </div>
+                <div class="col-md-4">
+                  <h5 class="card-title">Formal Attire</h5>
+                  <p class="card-text">$89.99</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-secondary btn-sm">-</button>
+                    <span class="mx-3">1</span>
+                    <button class="btn btn-outline-secondary btn-sm">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <p class="card-text fw-bold">$89.99</p>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-outline-danger btn-sm">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src="https://i.pinimg.com/1200x/6d/e9/ef/6de9ef96d5da0df4ab4f45704ca26b83.jpg" class="img-fluid rounded" alt="Women's Fashion">
+                </div>
+                <div class="col-md-4">
+                  <h5 class="card-title">Casual Dresses</h5>
+                  <p class="card-text">$59.99</p>
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center">
+                    <button class="btn btn-outline-secondary btn-sm">-</button>
+                    <span class="mx-3">1</span>
+                    <button class="btn btn-outline-secondary btn-sm">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <p class="card-text fw-bold">$59.99</p>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-outline-danger btn-sm">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="order-summary">
+            <h5 class="mb-4">Order Summary</h5>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Subtotal:</span>
+              <span>$199.97</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Shipping:</span>
+              <span>$5.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3 fw-bold">
+              <span>Total:</span>
+              <span>$205.96</span>
+            </div>
+            <a href="#checkout" class="btn btn-primary w-100">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKOUT PAGE -->
+  <section id="checkout" class="section-padding bg-light-gray">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Checkout</h2>
+      
+      <div class="checkout-steps">
+        <div class="step active">
+          <div class="step-number">1</div>
+          <div class="step-label">Shipping</div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-label">Payment</div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-label">Confirmation</div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="checkout-form">
+            <h5 class="mb-4">Shipping Information</h5>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" required>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="city" class="form-label">City</label>
+                  <input type="text" class="form-control" id="city" required>
+                </div>
+           
+              </div>
+              <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Select Country</option>
+                  <option value=""> india</option>
+                  <option value="">banglore</option>
+                  <option value="">kochi</option>
+
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+              </div>
+              <a href="#payment" class="btn btn-primary w-100">Continue to Payment</a>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="order-summary">
+            <h5 class="mb-4">Order Summary</h5>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Casual Wear x1</span>
+              <span>$49.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Formal Attire x1</span>
+              <span>$89.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Casual Dresses x1</span>
+              <span>$59.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 mt-3">
+              <span>Subtotal:</span>
+              <span>$199.97</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Shipping:</span>
+              <span>$5.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3 fw-bold">
+              <span>Total:</span>
+              <span>$205.96</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT PAGE -->
+  <section id="payment" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5 section-title">Payment</h2>
+      
+      <div class="checkout-steps">
+        <div class="step completed">
+          <div class="step-number"><i class="fas fa-check"></i></div>
+          <div class="step-label">Shipping</div>
+        </div>
+        <div class="step active">
+          <div class="step-number">2</div>
+          <div class="step-label">Payment</div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-label">Confirmation</div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="checkout-form">
+            <h5 class="mb-4">Payment Method</h5>
+            <ul class="nav nav-tabs mb-4" id="paymentTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="card-tab" data-bs-toggle="tab" data-bs-target="#card" type="button" role="tab">Credit Card</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal" type="button" role="tab">PayPal</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="paymentTabsContent">
+              <div class="tab-pane fade show active" id="card" role="tabpanel">
+                <form>
+                  <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <label for="expiryDate" class="form-label">Expiry Date</label>
+                      <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                  <a href="#confirmation" class="btn btn-primary w-100">Place Order</a>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="paypal" role="tabpanel">
+                <div class="text-center py-4">
+                  <p>You will be redirected to PayPal to complete your payment.</p>
+                  <a href="#confirmation" class="btn btn-primary">Pay with PayPal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="order-summary">
+            <h5 class="mb-4">Order Summary</h5>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Casual Wear x1</span>
+              <span>$49.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Formal Attire x1</span>
+              <span>$89.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Casual Dresses x1</span>
+              <span>$59.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 mt-3">
+              <span>Subtotal:</span>
+              <span>$199.97</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Shipping:</span>
+              <span>$5.99</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3 fw-bold">
+              <span>Total:</span>
+              <span>$205.96</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER CONFIRMATION PAGE -->
+  <section id="confirmation" class="section-padding bg-light-gray">
+    <div class="container">
+      <div class="thank-you-container">
+        <div class="thank-you-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h2 class="mb-3">Thank You for Your Order!</h2>
+        <p class="lead mb-4">Your order has been confirmed.</p>
+        <div class="order-details mb-4 p-4 bg-white rounded shadow-sm">
+          <h5 class="mb-3">Order Details</h5>
+          <p><strong>Estimated Delivery:</strong> 5-7 business days</p>
+          <p><strong>Shipping Address:</strong> ottapalam palakkad </p>
+        </div>
+        <a href="#home" class="btn btn-primary me-3">Continue Shopping</a>
+        <button class="btn btn-outline-secondary">Track Your Order</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section-padding bg-light-gray">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">About NexaCart</h2>
+          <p class="lead">Where Quality Meets Affordability</p>
+          <p>NexaCart is your premier destination for fashion that combines style, quality, and value. We believe that everyone deserves to look their best without breaking the bank.</p>
+          <p>Our carefully curated collections for men, women, and kids feature the latest trends and timeless classics, all at prices that make fashion accessible to everyone.</p>
+          <p>With a focus on customer satisfaction, we offer easy returns, secure payment options, and fast delivery to ensure your shopping experience is as enjoyable as wearing our products.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://i.pinimg.com/736x/3a/84/ef/3a84efe11c7ffbfce9059ab348defd29.jpg" class="img-fluid rounded shadow" alt="About NexaCart">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>NexaCart</h5>
+          <p>Where Quality Meets Affordability</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#men" class="text-white text-decoration-none">Men</a></li>
+            <li><a href="#women" class="text-white text-decoration-none">Women</a></li>
+            <li><a href="#kids" class="text-white text-decoration-none">Kids</a></li>
+            <li><a href="#shoes" class="text-white text-decoration-none">Shoes</a></li>
+            <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+          </ul>
+          </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: nexa@nexacart.com</p>
+          <p>Phone: 7043629681</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2025 NexaCart. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
